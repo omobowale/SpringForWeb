@@ -21,9 +21,5 @@
 		<security:form-login />
 		
 		<security:intercept-url pattern="/" access="permitAll" />
-		<security:intercept-url pattern="/test" access="hasRole('admin')" />
-		<security:intercept-url pattern="/check" access="permitAll" />
-		<security:intercept-url pattern="/products" access="isAuthenticated()" />
-		<security:intercept-url pattern="/**" access="denyAll" />
 	</security:http>
 </beans>
